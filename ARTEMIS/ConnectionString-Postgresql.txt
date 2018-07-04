@@ -1,0 +1,1 @@
+Driver={PostgreSQL ODBC Driver(Unicode)};Server=localhost;Port=5432;Database=backend;uid=postgres;pwd=h247hKvrLvzY;

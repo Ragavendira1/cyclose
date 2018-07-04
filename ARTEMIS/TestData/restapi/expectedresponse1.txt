@@ -1,0 +1,10 @@
+{
+"code":ARTEMISSTORE-newmycodetry,
+"content":
+[
+  {"code":AF @@ StoredValue,"name":"Afghanistan"},{"code":"AL"},{"code":"VG","name":ARTEMISSTORE-myvg}
+]
+}
+
+
+

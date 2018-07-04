@@ -1,0 +1,5 @@
+Dec 07, 2017 11:33:26 AM org.apache.commons.httpclient.HttpMethodDirector isRedirectNeeded
+INFO: Redirect requested but followRedirects is disabled
+SOAPSample::Default::::-1 - The expected response code is '200'. But the actual response code is '302'. Expected response content does not match with the actual reponse content. 
+SOAPSample::Default::::-2 - The expected response code is '200'. But the actual response code is '404'. Expected response content does not match with the actual reponse content. 
+Script 'SOAPSample' is Finished. 'Status : Failed'.

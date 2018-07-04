@@ -1,0 +1,16 @@
+Starting ChromeDriver 2.24.417431 (9aea000394714d2fbb20850021f6204f2256b9cf) on port 21275
+Only local connections are allowed.
+CyclosDemo001::Default::::-2 - Application 'https://demo.cyclos.org/#login' is launched.
+CyclosDemo001::Default::::-3 - Value 'demo' is entered in the field 'Username' of the screen 'Cyclos -> Login'.
+CyclosDemo001::Default::::-4 - Value '1234' is entered in the field 'Password' of the screen 'Cyclos -> Login'.
+CyclosDemo001::Default::::-5 - Button 'Login' in the screen 'Cyclos -> Login' is clicked.
+CyclosDemo001::Default::::-6 - Link 'UpdateProfile' in the screen 'Cyclos -> Home' is clicked.
+CyclosDemo001::Default::::-7 - Link 'Addresses' in the screen 'Cyclos -> Profile' is clicked.
+CyclosDemo001::Default::::-8 - Button 'Edit' in the screen 'Cyclos -> Profile' is clicked.
+CyclosDemo001::Default::::-9 - Value 'demo user' is entered in the field 'Name' of the screen 'Cyclos -> Addresses'.
+CyclosDemo001::Default::::-10 - Text 'demo user' is stored in the variable 'updatedname'.
+CyclosDemo001::Default::::-11 - Value '3525HX' is entered in the field 'ZipCode' of the screen 'Cyclos -> Addresses'.
+CyclosDemo001::Default::::-12 - Text '3525HX' is stored in the variable 'updatedzipcode'.
+CyclosDemo001::Default::::-13 - Button 'Save' in the screen 'Cyclos -> Addresses' is clicked.
+CyclosDemo001::Default::::-14 - Expected Value 'Saved successfully' matches with the value in the application.
+Script 'CyclosDemo001' is Finished. 'Status : Passed'.

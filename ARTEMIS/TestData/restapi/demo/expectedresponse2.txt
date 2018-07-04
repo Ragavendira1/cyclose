@@ -1,0 +1,9 @@
+{
+"code": 201,
+"content" :
+  {
+    "amount"="1.00",
+   "transactionNumber": "ARTEMISSTORE-refno" 
+}
+
+}

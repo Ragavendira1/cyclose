@@ -1,0 +1,9 @@
+RESTAPISample::Default::::-1 - The expected response code '200' matches with the actual response code. Expected response content does not match with the actual reponse content. 
+RESTAPISample::Default::::-2 - The expected response code '422' matches with the actual response code. Expected response content matches with the actual reponse content. 
+RESTAPISample::Default::::-3 - The expected response code '201' matches with the actual response code. Expected response content does not match with the actual reponse content. 
+Script 'RESTAPISample' is Finished. 'Status : Failed'.
+Error. Possibly...while retrieving the data sets from SQS_TEST_DATASET...while capturing screen shot / writing results. 
+org.postgresql.util.PSQLException: This ResultSet is closed.
+	at org.postgresql.jdbc.PgResultSet.checkClosed(PgResultSet.java:2758)
+	at org.postgresql.jdbc.PgResultSet.next(PgResultSet.java:1822)
+	at ARTEMISPackage.Driver.main(Driver.java:36)

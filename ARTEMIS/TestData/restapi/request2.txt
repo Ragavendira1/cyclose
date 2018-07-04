@@ -1,0 +1,23 @@
+{
+  "amount": "1",
+  "description": "test",
+  "currency": "UI's",
+  "type": "7762070814178012479",
+  "customValues": {},
+  "subject": "diwakar",
+  "scheduling": "direct",
+  "installmentsCount": 0,
+  "firstInstallmentDate": "2017-11-16T05:20:45.558Z",
+  "installments": [
+    {
+      "dueDate": "2017-11-30T05:20:45.558Z",
+      "amount": "1"
+    }
+  ],
+  "occurrencesCount": 0,
+  "firstOccurrenceDate": "2017-11-16T05:20:45.558Z",
+  "occurrenceInterval": {
+    "amount": 1,
+    "field": "days"
+  }
+}

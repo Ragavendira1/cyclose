@@ -1,0 +1,20 @@
+{
+  "name": "demoname",
+  "addressLine1": "demoaddressline1",
+  "addressLine2": "demoaddressline2",
+  "street": "demostreet",
+  "buildingNumber": "string",
+  "complement": "string",
+  "poBox": "string",
+  "neighborhood": "string",
+  "city": "string",
+  "region": "string",
+  "country": "IN",
+  "location": {
+    "latitude": 0,
+    "longitude": 0
+  },
+  "defaultAddress": true,
+  "hidden": true
+}
+

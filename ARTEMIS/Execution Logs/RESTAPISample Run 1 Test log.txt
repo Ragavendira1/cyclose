@@ -1,0 +1,8 @@
+RESTAPISample::Default::::-1 - The expected response code '200' matches with the actual response code. Expected response content does not match with the actual reponse content. 
+RESTAPISample::Default::::-2 - The expected response code '422' matches with the actual response code. Expected response content matches with the actual reponse content. 
+RESTAPISample::Default::::-3 - The expected response code '201' matches with the actual response code. Expected response content does not match with the actual reponse content. 
+Script 'RESTAPISample' is Finished. 'Status : Failed'.
+RESTAPISample::Default::::-1 - The expected response code '200' matches with the actual response code. Expected response content does not match with the actual reponse content. 
+RESTAPISample::Default::::-2 - The expected response code '422' matches with the actual response code. Expected response content matches with the actual reponse content. 
+RESTAPISample::Default::::-3 - The expected response code '201' matches with the actual response code. Expected response content does not match with the actual reponse content. 
+Script 'RESTAPISample' is Finished. 'Status : Failed'.

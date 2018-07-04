@@ -1,0 +1,10 @@
+{
+"code": 200,
+"content" :
+[
+  {    
+    "name": "CyclosDemo001 :: Default :: ::::updatedname@@StoredValue",    
+    "zip": "CyclosDemo001 :: Default :: ::::updatedzipcode@@StoredValue"    
+  }
+]
+}

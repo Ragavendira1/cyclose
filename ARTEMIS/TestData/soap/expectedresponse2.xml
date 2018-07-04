@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8" ?> 
+<SOAP-ENV:Envelope
+  xmlns:SOAP-ENV="http://schemas.xmlsoap.org/soap/envelope/"
+  xmlns:q0="http://sample.ws.ibm.com"
+  xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+   
+  <SOAP-ENV:Body>
+    <getUsersReturn>  
+      <User>  
+        <name>John</name>   
+        <address>    
+          <street>Park Street</street>     
+          <city>Washington</city>     
+          <zip>012345</zip>     
+        </address>    
+      </User>          
+      <User>    
+        <name>Mansoor</name>   
+        <address>    
+          <street>Martin Street</street>     
+          <city>Bangalore</city>     
+          <zip>135791</zip>     
+        </address>    
+      </User>    
+    </getUsersReturn>      
+  </SOAP-ENV:Body>
+</SOAP-ENV:Envelope>

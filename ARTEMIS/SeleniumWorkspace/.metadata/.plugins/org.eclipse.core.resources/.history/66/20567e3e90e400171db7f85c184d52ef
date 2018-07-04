@@ -1,0 +1,75 @@
+package ARTEMISPackage;
+
+import java.sql.ResultSet;
+
+public class Driver {
+	
+	public static void main(String args[]) {
+				
+		try {
+			
+			String javapath = "C:/Program Files/Java/jre7/bin/java.exe";
+			String jarpath = "C:/Users/tg2944/Downloads/artemis/ARTEMIS/SeleniumDriver.jar";
+			String runid = "0";
+			String runname = "test";
+			String testid = "442";
+			String database = "ACCESS";
+			String tool = "ARTEMISREST";
+			
+			 		
+				String command = javapath + " -jar " + "\"" + jarpath + "\"" + " \"" + runid + "\"" + " \"" + runname + "\"" + " \"" + testid + "\"" + " \"" + database + "\"" + " \"" + tool + "\"";
+				System.out.println(command);
+				//Process child = Runtime.getRuntime().exec(command);
+			
+			if(args.length != 0) {
+				TestAttributes.BatchName = "";
+				TestAttributes.Run_ID = Integer.parseInt(args[0].trim());
+				TestAttributes.Run_Name = args[1].trim();
+				TestAttributes.Instance_ID = Integer.parseInt(args[2].trim());
+				TestAttributes.Global_DataBase = args[3].trim();
+				TestAttributes.AutomationTool = args[4].trim();
+			}else {
+				TestAttributes.BatchName = "";
+				TestAttributes.Run_ID = 0;
+				TestAttributes.Run_Name = "Selenium-Debugging";
+				TestAttributes.Instance_ID = 442;
+				TestAttributes.Global_DataBase = "ACCESS";	
+				TestAttributes.AutomationTool = "ARTEMISREST";				 
+			}
+			if(TestAttributes.Run_ID!=0) {
+				TestAttributes.Global_SharedDataSetList = args[5].trim();
+				TestAttributes.Global_TestDataSetList = args[6].trim();
+				TestAttributes.StartStepId = Integer.parseInt(args[7].trim());
+				TestAttributes.TestInstanceControl = false;
+			}
+			
+			FunctionLibrary.getProjectLocation();
+			FunctionLibrary.EstablishConnection(); 
+			
+			if (!TestAttributes.InitialSetUpErrorMessage.trim().equalsIgnoreCase(""))
+				System.out.println(TestAttributes.InitialSetUpErrorMessage.trim() + "\n" + "Execution is not triggered");
+			else {			
+				if((TestAttributes.Instance_ID==0 && TestAttributes.BatchName.equalsIgnoreCase("")) || TestAttributes.Instance_ID!=0 && !TestAttributes.BatchName.equalsIgnoreCase(""))
+					System.out.println("Please provide either test instance id or the batch name");
+				else {
+					if(TestAttributes.Instance_ID!=0)
+						FunctionLibrary.Execution();
+					
+					if(!TestAttributes.BatchName.equalsIgnoreCase("")) {
+						ResultSet BatchResults = TestAttributes.batchstmt.executeQuery("SELECT * FROM SQS_TEST_BATCH where SQS_TB_Test_Batch_Name = '" + TestAttributes.BatchName + "' and upper(SQS_TB_Run) = 'YES' order by SQS_TB_Test_Instance_Id");
+						while(BatchResults.next()) {
+							TestAttributes.Run_ID = 0;
+							TestAttributes.Instance_ID = BatchResults.getInt("SQS_TB_Test_Instance_Id");
+							TestAttributes.AutomationTool = BatchResults.getString("SQS_TB_tool").trim();						
+							FunctionLibrary.Execution();
+						}
+					}	
+				}
+			}
+			
+		} catch(Exception e) {
+			e.printStackTrace();
+		}
+	}
+	
+}

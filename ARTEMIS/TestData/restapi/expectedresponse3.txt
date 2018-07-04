@@ -1,0 +1,60 @@
+{
+"code":201,
+"content":
+{
+  "id": "7762070814248201279",
+  "transactionNumber": "DEM-118775-NMR",
+  "kind": "payment",
+  "date": "2017-12-06T10:25:06.119Z",
+  "amount": "1.00",
+  "fromKind": "user",
+  "fromUser": {
+    "id": "7762070814178015807",
+    "display": "Demo user",
+    "shortDisplay": "demo",
+    "image": {
+      "id": "7762070814181320511",
+      "name": "LARGE",
+      "contentType": "image/png",
+      "length": 30062,
+      "url": "https://demo.cyclos.org/api/images/profile/AiT5JqYaDNcrXjeolh92t1T3UA9qIQZRyLVsyAbEmm5Tv3x6QYZIeRN3BeC7ErOx_128x128.png",
+      "width": 128,
+      "height": 128
+    }
+  },
+  "toKind": "user",
+  "toUser": {
+    "id": "7762070814169720383",
+    "display": "diwakar",
+    "shortDisplay": "diwakar"
+  },
+  "type": {
+    "id": "7762070814178012479",
+    "name": "Member payment",
+    "internalName": "memberaccount.memberpayment",
+    "from": {
+      "id": "7762070814178012479",
+      "name": "Member account",
+      "internalName": "memberaccount"
+    },
+    "to": {
+      "id": "7762070814178012479",
+      "name": "Member account",
+      "internalName": "memberaccount"
+    }
+  },
+  "currency": {
+    "id": "7762070814178012479",
+    "name": "Units",
+    "internalName": "units",
+    "symbol": "IU's",
+    "suffix": " IU's",
+    "transactionNumberPattern": "\\D\\E\\M\\-#####\\-\\N\\M\\R",
+    "decimalDigits": 2
+  },
+  "description": "test"
+}
+}
+
+
+

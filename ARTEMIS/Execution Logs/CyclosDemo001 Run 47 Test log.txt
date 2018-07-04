@@ -1,0 +1,8 @@
+CyclosDemo001::Default::::-16 - Sub script 'CyclosDemo002' is triggered.
+CyclosDemo002::Default::::-1 - Error while verifying the response. Please check if the verify data and its format is valid. Expected a ',' or '}' at 59 [character 60 line 1]. 
+CyclosDemo002::Default::::-1 - Repeating step due to error
+CyclosDemo002::Default::::-1 - Error while verifying the response. Please check if the verify data and its format is valid. Expected a ',' or '}' at 59 [character 60 line 1]. 
+CyclosDemo002::Default::::-1 - Repeating step due to error
+CyclosDemo002::Default::::-1 - Error while verifying the response. Please check if the verify data and its format is valid. Expected a ',' or '}' at 59 [character 60 line 1]. 
+CyclosDemo001::Default::::-16 - Error while executing the keyword 'GET'. Possibly while retrieving data / Capturing screen shot / Keyword function not available null.
+Script 'CyclosDemo001' is Finished. 'Status : Failed'.

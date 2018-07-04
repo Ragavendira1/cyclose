@@ -1,0 +1,2 @@
+CyclosDemo002::Default::::-1 - The expected response code '200' matches with the actual response code. Expected response content matches with the actual reponse content. 
+Script 'CyclosDemo002' is Finished. 'Status : Passed'.
